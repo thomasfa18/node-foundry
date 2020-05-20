@@ -1,0 +1,5 @@
+# Use an current node alpine image
+FROM node:current-alpine
+
+# run node when the container launches. assume path will be mapped to content
+CMD ["node", "/pkg/resources/app/main.js", "--headless", "--dataPath=/data" ]
