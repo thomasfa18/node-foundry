@@ -23,4 +23,4 @@ jobs:
     - name: docker push
       env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
-      run: docker push $DOCKER_USER/node-foundry
+      run: docker push $DOCKER_USER/node-foundry:latest
