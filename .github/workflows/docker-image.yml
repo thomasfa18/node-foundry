@@ -31,5 +31,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{secrets.DOCKER_USER}}/node-foundry:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
 
