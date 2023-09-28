@@ -1,5 +1,5 @@
 # Use an current node alpine image
-FROM node:current-alpine3.15
+FROM node:current-alpine3.17
 
 #make the default port accessible (you would need to change this to match your config.js in you data directory if you change from default)
 EXPOSE 30000:30000
